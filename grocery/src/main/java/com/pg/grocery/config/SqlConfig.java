@@ -16,15 +16,15 @@ public class SqlConfig {
     }
 
     private String getDatabaseUser() {
-        return "sammy";
+        return "####";
     }
 
     private String getDatabasePassword() {
-        return "Corp#123";
+        return "####";
     }
 
     private String getDatabaseSchema() {
-        return "trendsutra3";
+        return "####";
     }
 
     private String getDatabaseUrl() {
