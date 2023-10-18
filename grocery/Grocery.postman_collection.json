@@ -1,0 +1,454 @@
+{
+	"info": {
+		"_postman_id": "6b9890e3-29ac-4b26-b2ac-1bf74dcba2d2",
+		"name": "Grocery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "add_item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "web",
+								"type": "text"
+							},
+							{
+								"key": "microtime",
+								"value": "1629095681250",
+								"type": "text"
+							},
+							{
+								"key": "content-length",
+								"value": "217",
+								"type": "text"
+							},
+							{
+								"key": "host",
+								"value": "jservices.pepperfry.aws:8280",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "Apache-HttpClient/4.5.6 (Java/1.8.0_92)",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"product_id\" : \"123\",\n    \"name\" : \"apple\",\n    \"price\" : 236,\n    \"quantity\" : 50\n}"
+						},
+						"url": {
+							"raw": "localhost:8190/grocery/admin/add_item",
+							"host": [
+								"localhost"
+							],
+							"port": "8190",
+							"path": [
+								"grocery",
+								"admin",
+								"add_item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_items",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "web",
+								"type": "text"
+							},
+							{
+								"key": "microtime",
+								"value": "1629095681250",
+								"type": "text"
+							},
+							{
+								"key": "content-length",
+								"value": "217",
+								"type": "text"
+							},
+							{
+								"key": "host",
+								"value": "jservices.pepperfry.aws:8280",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "Apache-HttpClient/4.5.6 (Java/1.8.0_92)",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"product_id\": \"223\",\n        \"name\": \"grape\",\n        \"price\": 67,\n        \"quantity\": 10\n    }\n]"
+						},
+						"url": {
+							"raw": "localhost:8190/grocery/admin/add_items",
+							"host": [
+								"localhost"
+							],
+							"port": "8190",
+							"path": [
+								"grocery",
+								"admin",
+								"add_items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_item",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "web",
+								"type": "text"
+							},
+							{
+								"key": "microtime",
+								"value": "1629095681250",
+								"type": "text"
+							},
+							{
+								"key": "content-length",
+								"value": "217",
+								"type": "text"
+							},
+							{
+								"key": "host",
+								"value": "jservices.pepperfry.aws:8280",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "Apache-HttpClient/4.5.6 (Java/1.8.0_92)",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8190/grocery/admin/items",
+							"host": [
+								"localhost"
+							],
+							"port": "8190",
+							"path": [
+								"grocery",
+								"admin",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_items",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "web",
+								"type": "text"
+							},
+							{
+								"key": "microtime",
+								"value": "1629095681250",
+								"type": "text"
+							},
+							{
+								"key": "content-length",
+								"value": "217",
+								"type": "text"
+							},
+							{
+								"key": "host",
+								"value": "jservices.pepperfry.aws:8280",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "Apache-HttpClient/4.5.6 (Java/1.8.0_92)",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8190/grocery/admin/items",
+							"host": [
+								"localhost"
+							],
+							"port": "8190",
+							"path": [
+								"grocery",
+								"admin",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_item",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "web",
+								"type": "text"
+							},
+							{
+								"key": "microtime",
+								"value": "1629095681250",
+								"type": "text"
+							},
+							{
+								"key": "content-length",
+								"value": "217",
+								"type": "text"
+							},
+							{
+								"key": "host",
+								"value": "jservices.pepperfry.aws:8280",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "Apache-HttpClient/4.5.6 (Java/1.8.0_92)",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8190/grocery/admin/item/123",
+							"host": [
+								"localhost"
+							],
+							"port": "8190",
+							"path": [
+								"grocery",
+								"admin",
+								"item",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "web",
+								"type": "text"
+							},
+							{
+								"key": "microtime",
+								"value": "1629095681250",
+								"type": "text"
+							},
+							{
+								"key": "content-length",
+								"value": "217",
+								"type": "text"
+							},
+							{
+								"key": "host",
+								"value": "jservices.pepperfry.aws:8280",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "Apache-HttpClient/4.5.6 (Java/1.8.0_92)",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"product_id\": \"223\",\n        \"name\": \"grape\",\n        \"price\": 67,\n        \"quantity\": 10\n    }\n]"
+						},
+						"url": {
+							"raw": "localhost:8190/grocery/admin/add_items",
+							"host": [
+								"localhost"
+							],
+							"port": "8190",
+							"path": [
+								"grocery",
+								"admin",
+								"add_items"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "available_items",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "web",
+								"type": "text"
+							},
+							{
+								"key": "microtime",
+								"value": "1629095681250",
+								"type": "text"
+							},
+							{
+								"key": "content-length",
+								"value": "217",
+								"type": "text"
+							},
+							{
+								"key": "host",
+								"value": "jservices.pepperfry.aws:8280",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "Apache-HttpClient/4.5.6 (Java/1.8.0_92)",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"product_id\": \"223\",\n        \"name\": \"grape\",\n        \"price\": 67,\n        \"quantity\": 10\n    }\n]"
+						},
+						"url": {
+							"raw": "localhost:8190/grocery/user/available_items",
+							"host": [
+								"localhost"
+							],
+							"port": "8190",
+							"path": [
+								"grocery",
+								"user",
+								"available_items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "book_items",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "source",
+								"value": "web",
+								"type": "text"
+							},
+							{
+								"key": "microtime",
+								"value": "1629095681250",
+								"type": "text"
+							},
+							{
+								"key": "content-length",
+								"value": "217",
+								"type": "text"
+							},
+							{
+								"key": "host",
+								"value": "jservices.pepperfry.aws:8280",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "Apache-HttpClient/4.5.6 (Java/1.8.0_92)",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"product_id\": \"223\",\n        \"name\": \"grape\",\n        \"price\": 67,\n        \"quantity\": 10\n    }\n]"
+						},
+						"url": {
+							"raw": "localhost:8190/grocery/user/available_items",
+							"host": [
+								"localhost"
+							],
+							"port": "8190",
+							"path": [
+								"grocery",
+								"user",
+								"available_items"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
